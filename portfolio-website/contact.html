@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Manaswi Prakash</title>
+    <meta name="description" content="Contact Manaswi Prakash — Get in touch for collaborations or opportunities.">
+<meta name="author" content="Manaswi Prakash">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Portfolio of Manaswi Prakash</h1>
+        <nav aria-label="Main navigation">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+</nav>
+    </header>
+
+    <main>
+        <section id="contact-page" aria-labelledby="contact-title">
+
+            <div class="contact-hero">
+                <h2 id="contact-title">Get In Touch</h2>
+                <p>Have a question or want to work together? Feel free to reach out!</p>
+            </div>
+
+            <div class="contact-container">
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+
+                    <div class="info-item">
+                        <span class="info-label">Email</span>
+                        <span>manaswiprakash36@email.com</span>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-label">Location</span>
+                        <span>Gwalior, M.P, India</span>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-label">GitHub</span>
+                        <a href="https://github.com/" target="_blank">https://github.com/manaswiprakash36-ai</a>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-label">LinkedIn</span>
+                        <a href="https://linkedin.com/" target="_blank">www.linkedin.com/in/manaswi-prakash-211616340</a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <form class="contact-form" action="#" method="POST">
+
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            placeholder="Your name"
+                            required
+                            aria-required="true"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="your@email.com"
+                            required
+                            aria-required="true"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input 
+                            type="text" 
+                            id="subject" 
+                            name="subject" 
+                            placeholder="What is this about?"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            rows="5"
+                            placeholder="Your message..."
+                            required
+                            aria-required="true"
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Manaswi Prakash. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="https://github.com/" target="_blank" aria-label="GitHub Profile">GitHub</a>
+            <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn Profile">LinkedIn</a>
+            <a href="contact.html" aria-label="Contact Me">Contact</a>
+        </div>
+    </footer>
+
+    <script>
+    emailjs.init("gp5FAxWy1V4B23GVt");
+
+    document.querySelector(".contact-form").addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        emailjs.sendForm("service_3gjtpln", "template_s10acsn", this)
+            .then(function() {
+                alert("Message sent successfully! ❤️");
+                document.querySelector(".contact-form").reset();
+            }, function(error) {
+                alert("Something went wrong. Please try again.");
+                console.log(error);
+            });
+    });
+</script>
+
+</body>
+</html>
