@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <meta name="description" content="Manaswi Prakash — Computer Science student skilled in AI, ML and Web Development.">
+    <meta name="keywords" content="Manaswi Prakash, portfolio, AI, Machine Learning, Web Development">
+    <meta name="author" content="Manaswi Prakash">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Portfolio of Manaswi Prakash</h1>
+
+    <div class="nav-actions">
+
+        <nav aria-label="Main navigation">
+
+            <button
+                class="nav-toggle"
+                aria-label="Toggle navigation"
+                onclick="document.querySelector('nav ul').classList.toggle('open')">
+                ☰
+            </button>
+
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+
+        <button
+            class="theme-toggle"
+            onclick="toggleTheme()"
+            aria-label="Toggle dark mode">
+            🌙 Dark
+        </button>
+
+    </div>
+
+</header>
+
+<main>
+
+    <!-- Hero Section -->
+    <section id="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h2 id="hero-title">Manaswi Prakash</h2>
+            <p class="hero-subtitle">
+                Computer Science Student passionate about 
+                Artificial Intelligence and Web Development.
+            </p>
+            <div class="hero-buttons">
+                <a href="projects.html" class="btn-primary">View My Projects</a>
+                <a href="about.html" class="btn-secondary">About Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section id="featured-projects" aria-labelledby="featured-projects-title">
+        <header>
+            <h2 id="featured-projects-title">Featured Projects</h2>
+            <p>
+                A selection of projects that showcase my skills, creativity,
+                and hands-on experience in web development, programming, and AI.
+            </p>
+        </header>
+
+        <div class="projects-container">
+
+            <!-- Friendship Website -->
+            <article class="project-card">
+                <img 
+                    src="images/friendship.jpeg" 
+                    alt="Preview of Friendship Memories Website">
+                <header>
+                    <h3>Friendship Memories Website</h3>
+                </header>
+                <p>
+                    An interactive and personalized multimedia website created
+                    to preserve and showcase memorable moments with close friends.
+                    The website combines photographs, videos, personalized
+                    content, and interactive web elements to create an engaging
+                    digital memory experience.
+                </p>
+                <p>
+                    <strong>Technologies:</strong>
+                    HTML, CSS, JavaScript
+                </p>
+                <a href="https://friendship-website-umber.vercel.app/" target="_blank" aria-label="View Friendship Memories Website project">
+                    View Project
+                </a>
+            </article>
+
+            <!-- Police Case Management System -->
+            <article class="project-card">
+                <img 
+                    src="images/police-case.jpeg" 
+                    alt="Preview of Police Digital Case Management System">
+                <header>
+                    <h3>Police Digital Case Management System</h3>
+                </header>
+                <p>
+                    A digital case management platform designed to help manage
+                    police cases, officers, FIR records, criminals, and
+                    investigation-related information through a structured
+                    dashboard-based interface.
+                </p>
+                <p>
+                    <strong>Technologies:</strong>
+                    React, JavaScript, Node.js
+                </p>
+                <a href="https://github.com/manaswiprakash36-ai/Police-Case-System" target="_blank" aria-label="View Police Digital Case Management System project">
+                    View Project
+                </a>
+            </article>
+
+            <!-- BloomSense -->
+            <article class="project-card">
+                <img 
+                    src="images/bloomsense.jpeg" 
+                    alt="Preview of BloomSense Iris Classifier">
+                <header>
+                    <h3>BloomSense — Iris Flower Classifier</h3>
+                </header>
+                <p>
+                    An interactive machine learning application that classifies 
+                    Iris flowers into three species — Setosa, Versicolor, and 
+                    Virginica — based on user-input measurements. The application 
+                    provides real-time predictions along with data visualizations 
+                    and graphs for better understanding of the classification results.
+                </p>
+                <p>
+                    <strong>Technologies:</strong>
+                    Python, Scikit-learn, Pandas, Matplotlib, Seaborn, Streamlit
+                </p>
+                <a href="https://github.com/manaswiprakash36-ai/BloomSense" target="_blank" aria-label="View BloomSense Iris Classifier project">
+                    View Project
+                </a>
+            </article>
+
+            <!-- Credit Scoring -->
+            <article class="project-card">
+                <img 
+                    src="images/creditscoring.jpeg" 
+                    alt="Preview of Credit Scoring Model">
+                <header>
+                    <h3>Credit Scoring Model</h3>
+                </header>
+                <p>
+                    A machine learning project focused on analyzing financial
+                    information and predicting the likelihood of loan default.
+                    The project explores data preprocessing, model training,
+                    evaluation, and classification techniques.
+                </p>
+                <p>
+                    <strong>Technologies:</strong>
+                    Python, Pandas, NumPy, Scikit-learn
+                </p>
+                <a href="https://github.com/manaswiprakash36-ai/credit-scoring-app" target="_blank" aria-label="View Credit Scoring Model project">
+                    View Project
+                </a>
+            </article>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Manaswi Prakash. All rights reserved.</p>
+    <div class="footer-links">
+        <a href="https://github.com/" target="_blank" aria-label="GitHub Profile">GitHub</a>
+        <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn Profile">LinkedIn</a>
+        <a href="contact.html" aria-label="Contact Me">Contact</a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
